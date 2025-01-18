@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./font.css">
+  <link rel="stylesheet" href="./index.css">
+  
+  <title>Document</title>
+</head>
+
+<body>
+      <!-- هدر -->
+      <header-component></header-component>
+
+      <!-- کانتینر کلی -->
+      <div class="container">
+        <!-- سایدبار -->
+  
+        <menu-component></menu-component>
+        <div class="main-cont">
+
+        </div>
+
+        <div class="new-ticket-cont">
+          <div class="new-ticket-box">
+            <div class="new-ticket-top">
+              <div class="frame-2a"><span class="create-ticket-2b">ایجاد تیکت</span></div>
+              <div class="frame-2c" >
+                <div class="item">
+                  <div class="icon-2d"></div>
+                  <span class="expense">دیجی کالا فلان</span>
+                </div>
+                <span class="select-advertisement">انتخاب تبلیغ:</span>
+              </div>
+              <div class="chart-dropdown-menu" style="display: none;">
+                <ul>
+                    <li>تبلیغ 1</li>
+                    <li>تبلیغ 2</li>
+                    <li>تبلیغ 3</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="frame-2e">
+            
+              <span class="ticket-text"></span>
+              
+            
+            <input type="text" class="input-1" id="listInput" placeholder="متن تیکت..." dir="rtl" />
+          </div>
+          <button class="frame-31">
+            <span class="submit-ticket">ثبت تیکت</span>
+          </button>
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+        <script src="../header.js"></script>
+          <script src="../menu.js"></script>
+        <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.classList.toggle('collapsed');
+        });
+        document.querySelector('.item').addEventListener('click', function() {
+    const menu = document.querySelector('.chart-dropdown-menu');
+    menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'block' : 'none';
+});
+document.addEventListener('click', function(event) {
+    const dropdownMenu = document.querySelector('.chart-dropdown-menu');
+    const imgF = document.querySelector('.item');
+
+
+    if (!dropdownMenu.contains(event.target) && !imgF.contains(event.target)) {
+        dropdownMenu.style.display = 'none'; 
+    }
+});
+
+      </script>
+</body>
+</html>

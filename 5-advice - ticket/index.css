@@ -1,0 +1,112 @@
+ /* تنظیمات کلی صفحه */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  :root {
+--default-font-family: YekanBakh-Black;
+font-family: Yekan Bakh;
+}
+  body {
+    font-family: Yekan Bakh;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+
+  /* کانتینر کلی */
+  .container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .main-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 10px;
+    width: 100%;
+  }
+  .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .main2 {
+        flex: 2;
+        padding: 20px;
+        border-left: 2px solid #eee;
+    }
+
+    .ticket-sidebar {
+        flex: 1;
+        background-color: #f3f3f3;
+        padding: 20px;
+        overflow-y: auto;
+        max-height: 400px;
+    }
+
+    .ticket-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .ticket-form label {
+        font-weight: bold;
+    }
+
+    .ticket-form textarea,
+    .ticket-form input,
+    .ticket-form button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .ticket-form button {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+    }
+
+    .ticket-form button:hover {
+        background-color: #0056b3;
+    }
+
+    .ticket-item {
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .ticket-item:hover {
+        background-color: #f0f8ff;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: row;
+        }
+
+        .main {
+            border-left: none;
+            border-top: 2px solid #eee;
+        }
+        .container2{display: block !important;}
+    }

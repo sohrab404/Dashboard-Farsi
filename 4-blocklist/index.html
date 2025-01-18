@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./font.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./sciript.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+      <!-- هدر -->
+      <header-component></header-component>
+
+      <!-- کانتینر کلی -->
+      <div class="container">
+        <!-- سایدبار -->
+  
+        <menu-component></menu-component>
+        <div class="main-cont">
+          <div class="blocktop">
+
+
+            <div class="block-container">
+              <div class="block-header">
+                  <h2>بلاک کردن پیج ها</h2>
+                  <p>لطفا لیست پیج هایی که نیاز به بلاک دارید در فیلد زیر وارد کنید</p>
+              </div>
+              <div class="block-input">
+                  <div class="input-cont">
+                    <input type="text" class="input-1" id="listInput" placeholder="لیست خود را وارد کنید..." dir="rtl">
+                  </div>
+                  
+              </div>
+              <div class="butt-cont"><button class="block-button"><span class="submit-list">ثبت لیست</span></button></div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <div class="block-container block-container2">
+            <div class="block-top-content">
+              <div class="block-title">لیست بلاک من</div>
+              <div class="line-divider"></div>
+              <div class="block-table">
+                <div class="block-table-header">
+                  <div class="header-item">#</div>
+                  <div class="header-item page-tt">پیج</div>
+                  <div class="header-item date-tt" >تاریخ ثبت در لیست</div>
+                  <div class="header-item">حذف</div>
+                </div>
+                <div class="block-table-body">
+                  <div class="block-table-row">
+                    <div class="table-cell block-num">#۱</div>
+                    <div class="table-cell det-tt">مشکل در بارگذاری گزارش عملکرد کمپین</div>
+                    <div class="table-cell">۱۴۰۳/۰۴/۲۳</div>
+                    <div class="table-cell">
+                      <div class="icon-box">
+                        <div class="i-remove"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block-table-row">
+                    <div class="table-cell block-num">#۲</div>
+                    <div class="table-cell">مشکل در بارگذاری گزارش عملکرد کمپین</div>
+                    <div class="table-cell">۱۴۰۳/۰۴/۲۳</div>
+                    <div class="table-cell">
+                      <div class="icon-box">
+                        <div class="i-remove"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block-table-row">
+                    <div class="table-cell block-num">#۳</div>
+                    <div class="table-cell">مشکل در بارگذاری گزارش عملکرد کمپین</div>
+                    <div class="table-cell">۱۴۰۳/۰۴/۲۳</div>
+                    <div class="table-cell">
+                      <div class="icon-box">
+                        <div class="i-remove"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block-table-row">
+                    <div class="table-cell block-num">#۳</div>
+                    <div class="table-cell">مشکل در بارگذاری گزارش عملکرد کمپین</div>
+                    <div class="table-cell">۱۴۰۳/۰۴/۲۳</div>
+                    <div class="table-cell">
+                      <div class="icon-box">
+                        <div class="i-remove"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+        <script src="../header.js"></script>
+          <script src="../menu.js"></script>
+        <script>document.querySelector('.menu-toggle').addEventListener('click', function () {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.classList.toggle('collapsed');
+        });
+    
+      </script>
+</body>
+</html>

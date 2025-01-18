@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yekan+Bakh:wght@300;400;600;700&display=swap" />
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <link rel="stylesheet" href="./font.css">
+  <link rel="stylesheet" href="./index.css">
+  <title>داشبورد</title>
+
+</head>
+<body>
+  
+  <!-- هدر -->
+  <header-component></header-component>
+
+  <!-- کانتینر کلی -->
+  <div class="container">
+    <!-- سایدبار -->
+
+    <menu-component></menu-component>
+
+    <div class="main-content">
+      <div class="breadcrumb">
+        <!-- مسیر صفحه -->
+        <div class="frame-27">
+          <div >
+            <span class="list-item-to">دیجی کالا فلان </span
+            ><span class="list-item-to">-</span
+            ><span class="list-item-to"> #1720874158</span
+            ><span class="dash-2a"> </span>
+          </div>
+          <span class="list-item">></span
+          ><span class="list-item-t">لیست تبلیغات من</span
+          ><span class="list-item">></span><span class="list-item-t">خانه</span>
+        </div>
+    </div>
+
+    <div class="top-section">
+        <div class="left-sec">
+          <div id="chart-container">
+            <select id="chartSelector" onchange="updateChart()">
+                <option value="dataset1">مجموعه داده ۱</option>
+                <option value="dataset2">مجموعه داده ۲</option>
+            </select>
+            <canvas id="myChart"></canvas>
+        </div>
+        </div>
+        <div class="right-sec">
+          <div class="pic-right"></div>
+            <!-- بخش سمت راست -->
+            <div class="right-content">
+              <div class="right-top">
+                <div class="right-top1">
+                  <span class="right-top1-t">دیجی کالا فلان</span>
+                  <span class="right-top1-b">-</span>
+                  <span class="right-top1-b">#1720874158 </span>
+                </div>
+                <button class="right-top2">
+                  <span class="done">انجام شد</span>
+                </button>
+              </div>
+              <div class="right-main">
+                <div class="right-sec1">
+                  <div class="sec1-content"><div class="eye-open"><div class="icon-63"></div></div>
+                    <div class="sec1-content_top">
+                      <span class="sec1-content_top--t">میزان کل ویو</span><span class="sec1-content_top--num">۲۱K</span>
+                    </div>
+
+                  </div>
+                  <div class="frame-64">
+                    <button class="frame-65">
+                      <div class="pointing-66"></div>
+                      <span class="number-67">۴۰</span></button><span class="frame-68">تعداد کل کلیک</span>
+                  </div>
+                </div>
+                <div class="right-sec1">
+                  <div class="sec1-content"><div class="eye-open"><div class="icon-63"></div></div>
+                    <div class="sec1-content_top">
+                      <span class="sec1-content_top--t">میزان کل ویو</span><span class="sec1-content_top--num">۲۱K</span>
+                    </div>
+
+                  </div>
+                  <div class="frame-64">
+                    <button class="frame-65">
+                      <div class="pointing-66"></div>
+                      <span class="number-67">۴۰</span></button><span class="frame-68">تعداد کل کلیک</span>
+                  </div>
+                </div>
+                <div class="right-sec2">
+                  <div class="frame-4f">
+                    <div class="frame-50">
+                      <span class="number-51">تعداد کل ایمپرشن</span><span class="number-52">۱.۵۶K</span>
+                    </div>
+                    <div class="icon-53"></div>
+                  </div>
+                </div>
+              </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="text-section">
+      <div class="participants-list">
+        <span class="advertising-list-digikala">لیست شرکت کنندگان در تبلیغ </span><span class="source-music">دیجی کالا فلان #1715094801</span>
+      </div>
+      <button id="toggleButton">
+        <div class="icon3"></div>
+    </button>
+    </div>
+
+    <div class="main-section" id="container1">
+        <!-- کانتینر اصلی -->
+<div class="frame-6e">
+      
+          <div class="group-8a"></div>
+        
+        <span class="source-music-6f">منبع همه موزیکا اینجاست👇</span>
+        <div class="frame-70">
+        <span class="date">۱۴۰۳/۰۴/۲۳</span><span class="date-separator">-</span><span class="time">۰۹:۲۰ AM</span>
+        <div class="calendar"></div>
+        </div>
+        <div class="frame-71">
+        <div class="frame-72">
+        <span class="members-count">۱.۰۵۳.۶۴۸</span>
+        
+        <span class="members-count-75">تعداد اعضا</span>
+        <div class="users-profiles-73"><div class="icon-74"></div></div>
+        </div>
+        <div class="frame-76">
+        <span class="views-count">۱۳.۷۸۹</span><span class="views-count-77">کل ویو</span>
+        <div class="eye-open-78"><div class="icon-79"></div></div>
+        </div>
+        <div class="frame-7a">
+        <span class="impressions">۱۰.۹۸۶</span><span class="impressions-7b">ایمپرشن</span>
+        <div class="lightning-filled-7c"><div class="icon-7d"></div></div>
+        </div>
+        <div class="frame-7e">
+        <span class="reach">۵.۳۴۲</span><span class="reach-7f">ریچ</span>
+        <div class="target"><div class="icon-80"></div></div>
+        </div>
+        <div class="frame-81">
+        <span class="clicks">۳.۵۴۳</span><span class="clicks-82">کلیک</span>
+        <div class="frame-83">
+        <div class="pointing-84"><div class="shape"></div></div>
+        </div>
+        </div>
+        <div class="frame-85">
+        <span class="stickers-tap">۳.۵۴۳</span><span class="stickers-tap-86">استیکر تپ </span>
+        <div class="tag"><div class="icon-87"></div></div>
+        </div>
+        </div>
+        <button class="frame-88">
+        <span class="view-final-shot">مشاهده شات نهایی</span>
+        <div class="image"><div class="icon-89"></div></div>
+        </button>
+        
+        
+        
+</div>
+<div class="frame-6e">
+      
+  <div class="group-8a"></div>
+
+<span class="source-music-6f">منبع همه موزیکا اینجاست👇</span>
+<div class="frame-70">
+<span class="date">۱۴۰۳/۰۴/۲۳</span><span class="date-separator">-</span><span class="time">۰۹:۲۰ AM</span>
+<div class="calendar"></div>
+</div>
+<div class="frame-71">
+<div class="frame-72">
+<span class="members-count">۱.۰۵۳.۶۴۸</span>
+
+<span class="members-count-75">تعداد اعضا</span>
+<div class="users-profiles-73"><div class="icon-74"></div></div>
+</div>
+<div class="frame-76">
+<span class="views-count">۱۳.۷۸۹</span><span class="views-count-77">کل ویو</span>
+<div class="eye-open-78"><div class="icon-79"></div></div>
+</div>
+<div class="frame-7a">
+<span class="impressions">۱۰.۹۸۶</span><span class="impressions-7b">ایمپرشن</span>
+<div class="lightning-filled-7c"><div class="icon-7d"></div></div>
+</div>
+<div class="frame-7e">
+<span class="reach">۵.۳۴۲</span><span class="reach-7f">ریچ</span>
+<div class="target"><div class="icon-80"></div></div>
+</div>
+<div class="frame-81">
+<span class="clicks">۳.۵۴۳</span><span class="clicks-82">کلیک</span>
+<div class="frame-83">
+<div class="pointing-84"><div class="shape"></div></div>
+</div>
+</div>
+<div class="frame-85">
+<span class="stickers-tap">۳.۵۴۳</span><span class="stickers-tap-86">استیکر تپ </span>
+<div class="tag"><div class="icon-87"></div></div>
+</div>
+</div>
+<button class="frame-88">
+<span class="view-final-shot">مشاهده شات نهایی</span>
+<div class="image"><div class="icon-89"></div></div>
+</button>
+
+
+
+</div>
+<div class="frame-6e">
+      
+  <div class="group-8a"></div>
+
+<span class="source-music-6f">منبع همه موزیکا اینجاست👇</span>
+<div class="frame-70">
+<span class="date">۱۴۰۳/۰۴/۲۳</span><span class="date-separator">-</span><span class="time">۰۹:۲۰ AM</span>
+<div class="calendar"></div>
+</div>
+<div class="frame-71">
+<div class="frame-72">
+<span class="members-count">۱.۰۵۳.۶۴۸</span>
+
+<span class="members-count-75">تعداد اعضا</span>
+<div class="users-profiles-73"><div class="icon-74"></div></div>
+</div>
+<div class="frame-76">
+<span class="views-count">۱۳.۷۸۹</span><span class="views-count-77">کل ویو</span>
+<div class="eye-open-78"><div class="icon-79"></div></div>
+</div>
+<div class="frame-7a">
+<span class="impressions">۱۰.۹۸۶</span><span class="impressions-7b">ایمپرشن</span>
+<div class="lightning-filled-7c"><div class="icon-7d"></div></div>
+</div>
+<div class="frame-7e">
+<span class="reach">۵.۳۴۲</span><span class="reach-7f">ریچ</span>
+<div class="target"><div class="icon-80"></div></div>
+</div>
+<div class="frame-81">
+<span class="clicks">۳.۵۴۳</span><span class="clicks-82">کلیک</span>
+<div class="frame-83">
+<div class="pointing-84"><div class="shape"></div></div>
+</div>
+</div>
+<div class="frame-85">
+<span class="stickers-tap">۳.۵۴۳</span><span class="stickers-tap-86">استیکر تپ </span>
+<div class="tag"><div class="icon-87"></div></div>
+</div>
+</div>
+<button class="frame-88">
+<span class="view-final-shot">مشاهده شات نهایی</span>
+<div class="image"><div class="icon-89"></div></div>
+</button>
+
+
+
+</div>
+<div class="frame-6e">
+      
+  <div class="group-8a"></div>
+
+<span class="source-music-6f">منبع همه موزیکا اینجاست👇</span>
+<div class="frame-70">
+<span class="date">۱۴۰۳/۰۴/۲۳</span><span class="date-separator">-</span><span class="time">۰۹:۲۰ AM</span>
+<div class="calendar"></div>
+</div>
+<div class="frame-71">
+<div class="frame-72">
+<span class="members-count">۱.۰۵۳.۶۴۸</span>
+
+<span class="members-count-75">تعداد اعضا</span>
+<div class="users-profiles-73"><div class="icon-74"></div></div>
+</div>
+<div class="frame-76">
+<span class="views-count">۱۳.۷۸۹</span><span class="views-count-77">کل ویو</span>
+<div class="eye-open-78"><div class="icon-79"></div></div>
+</div>
+<div class="frame-7a">
+<span class="impressions">۱۰.۹۸۶</span><span class="impressions-7b">ایمپرشن</span>
+<div class="lightning-filled-7c"><div class="icon-7d"></div></div>
+</div>
+<div class="frame-7e">
+<span class="reach">۵.۳۴۲</span><span class="reach-7f">ریچ</span>
+<div class="target"><div class="icon-80"></div></div>
+</div>
+<div class="frame-81">
+<span class="clicks">۳.۵۴۳</span><span class="clicks-82">کلیک</span>
+<div class="frame-83">
+<div class="pointing-84"><div class="shape"></div></div>
+</div>
+</div>
+<div class="frame-85">
+<span class="stickers-tap">۳.۵۴۳</span><span class="stickers-tap-86">استیکر تپ </span>
+<div class="tag"><div class="icon-87"></div></div>
+</div>
+</div>
+<button class="frame-88">
+<span class="view-final-shot">مشاهده شات نهایی</span>
+<div class="image"><div class="icon-89"></div></div>
+</button>
+
+
+
+</div>
+    </div>
+    <div class="main-section" id="container2" style="display: none;">
+      <div class="table-container">
+        <!-- Header Row -->
+        <div class="table-row">
+            <div class="table-cell">#</div>
+            <div class="table-cell">پروفایل</div>
+            <div class="table-cell">رسانه</div>
+            <div class="table-cell">تاریخ انجام تبلیغ</div>
+            <div class="table-cell">تعداد اعضا</div>
+            <div class="table-cell">ویو</div>
+            <div class="table-cell">ایمپرشن</div>
+            <div class="table-cell">رجع</div>
+            <div class="table-cell">کلیک</div>
+            <div class="table-cell">لینک تبلیغ</div>
+            <div class="table-cell">شات</div>
+        </div>
+
+        <!-- Example Data Rows -->
+        <div class="table-row">
+            <div class="table-cell">۱</div>
+            <div class="table-cell">
+                <img src="./assets/images/dbe64920-f6aa-4ea1-8dcd-7d9cddff4b3a.png" alt="Profile">
+            </div>
+            <div class="table-cell">@fact_bomb</div>
+            <div class="table-cell">۱۴۰۲/۰۴/۲۳</div>
+            <div class="table-cell">۷۴</div>
+            <div class="table-cell">۰.۰k</div>
+            <div class="table-cell">۳۰</div>
+            <div class="table-cell">۷۴</div>
+            <div class="table-cell">۷۴</div>
+            <div class="table-cell">
+                <a class="profile-link" href="#">/3362094925476366106</a>
+            </div>
+            <div class="table-cell"><img src="./assets/images/a273072a-5128-4075-a77f-e4749fc9f866.png" alt=""></div>
+        </div>
+
+        <!-- Repeat the rows as necessary -->
+        <div class="table-row">
+            <div class="table-cell">۲</div>
+            <div class="table-cell">
+                <img src="./assets/images/dbe64920-f6aa-4ea1-8dcd-7d9cddff4b3a.png" alt="Profile">
+            </div>
+            <div class="table-cell">@fact_bomb</div>
+            <div class="table-cell">۱۴۰۲/۰۴/۲۳</div>
+            <div class="table-cell">۷۴</div>
+            <div class="table-cell">۰.۰k</div>
+            <div class="table-cell">۳۰</div>
+            <div class="table-cell">۷۴</div>
+            <div class="table-cell">۷۴</div>
+            <div class="table-cell">
+                <a class="profile-link" href="#">/3362094925476366106</a>
+            </div>
+            <div class="table-cell">چت</div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <!-- محتوای اصلی -->
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+const data = {
+    labels: ['A', 'B', 'C', 'D', 'E'],
+    datasets: {
+        dataset1: [240, 150, 90, 300, 60],
+        dataset2: [200, 180, 100, 250, 80]
+    }
+};
+
+let chartInstance = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: data.labels,
+        datasets: [{
+            label: 'میزان کل ویوها',
+            data: data.datasets.dataset1,
+            backgroundColor: 'rgba(255, 165, 0, 0.8)', // رنگ نارنجی شفاف
+            borderRadius: 5, // گوشه‌های گرد
+            barPercentage: 0.4, // عرض بارها کمتر شده
+        }]
+    },
+    options: {
+        responsive: false,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false // حذف عنوان اضافی
+            }
+        },
+        scales: {
+            x: {
+                grid: {
+                    display: false // حذف خطوط عمودی
+                }
+            },
+            y: {
+                beginAtZero: true,
+                max: 300,
+                grid: {
+                    color: '#eee' // خطوط کم‌رنگ افقی
+                }
+            }
+        }
+    }
+});
+
+function updateChart() {
+    const selectedDataset = document.getElementById('chartSelector').value;
+    chartInstance.data.datasets[0].data = data.datasets[selectedDataset];
+    chartInstance.update();
+}
+
+  </script>
+  <script src="script.js"></script>
+  <script src="../header.js"></script>
+    <script src="../menu.js"></script>
+  <script>
+  document.querySelector('.menu-toggle').addEventListener('click', function () {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('collapsed');
+  });
+  document.getElementById('toggleButton').addEventListener('click', function () {
+            const container1 = document.getElementById('container1');
+            const container2 = document.getElementById('container2');
+            const toggleButton = document.getElementById('toggleButton');
+
+            if (container1 && container2) {
+                if (container1.style.display !== 'none') {
+                    // مخفی کردن کانتینر 1 و نمایش کانتینر 2
+                    container1.style.display = 'none';
+                    container2.style.display = 'flex';
+
+                    // اضافه کردن کلاس اکتیو به دکمه
+                    toggleButton.classList.add('active');
+                } else {
+                    // مخفی کردن کانتینر 2 و نمایش کانتینر 1
+                    container2.style.display = 'none';
+                    container1.style.display = 'flex';
+
+                    // حذف کلاس اکتیو از دکمه
+                    toggleButton.classList.remove('active');
+                }
+            }
+        });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

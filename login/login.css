@@ -1,0 +1,72 @@
+
+body {
+  font-family: 'Yekan Bakh', sans-serif;
+}
+.left {
+  background-color: #ff8836;
+  color: white;
+  padding: 4rem;
+  z-index: 1;
+}
+.right {
+  padding: 4rem;
+}
+.btn-primary {
+  background-color: #37619d;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: rgba(16, 45, 85, 1);
+  box-shadow: 0 4px 61px rgba(16, 45, 85, 0.4);
+}
+.form-control::placeholder {
+  text-align: right;
+}
+.text-link{  text-decoration: none;
+    color: #0c1623;
+    font-weight: bold;
+}
+.text-link:hover {
+  color: #37619d;
+  font-weight: bold;
+  text-decoration: none;
+}
+.left{
+    border-radius: 32px;
+    margin: 2rem;
+}
+.icon-i{
+    margin-right: 1rem;
+   
+}
+.icon-e{
+    margin-left: 1rem;
+}
+::placeholder{
+ margin-right: 2rem;
+}
+.form-control{
+    text-align: right;
+    padding-right: 3rem
+}
+.atext{
+    color: #003366;
+    font-family: Yekan Bakh, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24.8px;
+    text-align: right;
+    text-decoration: none;
+}
+.textbox{
+margin-top: 1rem;
+}
+
+
+@media (max-width: 765px) {
+   .left{
+    margin: 0;
+   }
+
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./font.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./sciript.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+      <!-- هدر -->
+      <header-component></header-component>
+
+      <!-- کانتینر کلی -->
+      <div class="container">
+        <!-- سایدبار -->
+  
+        <menu-component></menu-component>
+        <div class="main-cont">
+
+            <div class="container2">
+                <!-- Ticket Sidebar -->
+                <div class="ticket-sidebar">
+                    <h3>تیکت‌های قبلی</h3>
+                    <div class="ticket-item">#1 - مشکل در گزارش عملکرد</div>
+                    <div class="ticket-item">#2 - سوال در مورد سفارش</div>
+                    <div class="ticket-item">#3 - درخواست بازپرداخت</div>
+                    <!-- Add more ticket items here -->
+                </div>
+        
+                <!-- Main Content -->
+                <div class="main2">
+                    <h3>ارسال تیکت جدید</h3>
+                    <form class="ticket-form">
+                        <label for="subject">موضوع</label>
+                        <input type="text" id="subject" name="subject" placeholder="موضوع تیکت خود را وارد کنید">
+        
+                        <label for="message">پیام</label>
+                        <textarea id="message" name="message" rows="6" placeholder="توضیحات مربوط به تیکت را وارد کنید"></textarea>
+        
+                        <button type="submit">ارسال تیکت</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+        <script src="script.js"></script>
+        <script src="../header.js"></script>
+          <script src="../menu.js"></script>
+        <script>document.querySelector('.menu-toggle').addEventListener('click', function () {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.classList.toggle('collapsed');
+        });
+    
+      </script>
+</body>
+</html>
